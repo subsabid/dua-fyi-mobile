@@ -1,0 +1,42 @@
+[
+  {
+    "id": "40-1",
+    "chapterId": 40,
+    "arabic": "يَسْتَعِيذُ بِاللهِ.",
+    "transliteration": "Yasta'eethu billaah.",
+    "translation": "He should seek refuge in Allah.",
+    "reference": "Al-Bukhari 3/1193, Muslim 1/120",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "40-2",
+    "chapterId": 40,
+    "arabic": "يَنْتَهِي عَمَّا شَكَّ فِيهِ.",
+    "transliteration": "Yantahee 'ammaa shakka feeh.",
+    "translation": "He should renounce that which is causing his doubt.",
+    "reference": "Al-Bukhari 3/1193, Muslim 1/120",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "40-3",
+    "chapterId": 40,
+    "arabic": "آمَنْتُ بِاللهِ وَرُسُلِهِ.",
+    "transliteration": "Aamantu billaahi wa rusulih.",
+    "translation": "I believe in Allah and His messengers.",
+    "reference": "Muslim 1/119",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "40-4",
+    "chapterId": 40,
+    "arabic": "هُوَ الْأَوَّلُ وَالْآخِرُ وَالظَّاهِرُ وَالْبَاطِنُ، وَهُوَ بِكُلِّ شَيْءٍ عَلِيمٌ.",
+    "transliteration": "Huwal-awwalu wal'aakhiru waththaahiru walbaatinu, wa huwa bikulli shay'in 'aleem.",
+    "translation": "He is the First and the Last, the Most High and the Most Near. And He is Knower of all things.",
+    "reference": "Abu Dawud 4/329",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]
