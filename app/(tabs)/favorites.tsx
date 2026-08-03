@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { StyleSheet, View, FlatList, ActivityIndicator, Text } from 'react-native';
+import { StyleSheet, View, ActivityIndicator, Text } from 'react-native';
 import { Stack } from 'expo-router';
+import { FlashList } from '@shopify/flash-list';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
 import { EmptyState } from '@/src/components/EmptyState';
 import { useFavoritesStore } from '@/src/stores/favoritesStore';
@@ -47,10 +48,11 @@ export default function FavoritesScreen() {
           subtitle="Tap the heart on any dua to save it here"
         />
       ) : (
-        <FlatList
+        <FlashList
           data={duas}
-          keyExtractor={(item) => item.id}
-          renderItem={({ item, index }) => (
+          keyExtractor={(item: Dua) => item.id}
+          {...({ estimatedItemSize: 300 } as any)}
+          renderItem={({ item, index }: { item: Dua; index: number }) => (
             <DuaCard dua={item} index={index + 1} />
           )}
           contentContainerStyle={styles.listContainer}

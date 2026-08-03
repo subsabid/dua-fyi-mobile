@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet, View, FlatList, Text } from 'react-native';
-import { useLocalSearchParams, Stack, router } from 'expo-router';
+import { StyleSheet, View, Text } from 'react-native';
+import { useLocalSearchParams, Stack } from 'expo-router';
+import { FlashList } from '@shopify/flash-list';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
-import { colors, spacing } from '@/src/theme';
+import { spacing } from '@/src/theme';
 import { ChapterListItem } from '@/src/components/ChapterListItem';
 import { categories, getChaptersByCategory, getDuasByChapter } from '@/src/data';
+import { Chapter } from '@/src/data/types';
 
 export default function CategoryDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
@@ -25,11 +27,12 @@ export default function CategoryDetailScreen() {
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <Stack.Screen options={{ title: category.nameEn }} />
       
-      <FlatList
+      <FlashList
         data={chapters}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item: Chapter) => item.id.toString()}
+        {...({ estimatedItemSize: 80 } as any)}
         contentContainerStyle={styles.listContainer}
-        renderItem={({ item }) => {
+        renderItem={({ item }: { item: Chapter }) => {
           const duas = getDuasByChapter(item.id);
           return (
             <ChapterListItem 

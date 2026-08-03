@@ -1,10 +1,12 @@
 import React from 'react';
-import { StyleSheet, View, FlatList } from 'react-native';
+import { StyleSheet, View } from 'react-native';
 import { Stack } from 'expo-router';
+import { FlashList } from '@shopify/flash-list';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
 import { spacing } from '@/src/theme';
 import { CategoryCard } from '@/src/components/CategoryCard';
 import { categories, getChaptersByCategory } from '@/src/data';
+import { Category } from '@/src/data/types';
 
 export default function CategoriesScreen() {
   const theme = useThemeColors();
@@ -13,13 +15,13 @@ export default function CategoriesScreen() {
     <View style={[styles.container, { backgroundColor: theme.background }]}>
       <Stack.Screen options={{ title: 'Categories' }} />
       
-      <FlatList
+      <FlashList
         data={categories}
-        keyExtractor={(item) => item.id.toString()}
+        keyExtractor={(item: Category) => item.id.toString()}
         numColumns={2}
+        {...({ estimatedItemSize: 140 } as any)}
         contentContainerStyle={styles.listContainer}
-        columnWrapperStyle={styles.row}
-        renderItem={({ item }) => {
+        renderItem={({ item }: { item: Category }) => {
           const chapters = getChaptersByCategory(item.slug);
           return (
             <View style={styles.cardContainer}>
@@ -42,13 +44,9 @@ const styles = StyleSheet.create({
   },
   listContainer: {
     padding: spacing.md,
-    gap: spacing.md,
-  },
-  row: {
-    gap: spacing.md,
-    justifyContent: 'space-between',
   },
   cardContainer: {
     flex: 1,
+    padding: spacing.xs,
   }
 });
