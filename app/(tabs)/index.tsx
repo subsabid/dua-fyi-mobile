@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Text, ScrollView, FlatList } from 'react-native';
+import { StyleSheet, View, Text, ScrollView } from 'react-native';
 import { Stack, router } from 'expo-router';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
 import { colors, spacing, fontSize, fonts, borderRadius } from '@/src/theme';
@@ -47,12 +47,12 @@ export default function HomeScreen() {
           {quickCategories.map((category) => {
             const chapters = getChaptersByCategory(category.slug);
             return (
-              <View key={category.id} style={styles.categoryWrapper}>
-                <CategoryCard 
-                  category={category} 
-                  chapterCount={chapters.length}
-                />
-              </View>
+              <CategoryCard 
+                key={category.id}
+                category={category} 
+                chapterCount={chapters.length}
+                variant="compact"
+              />
             );
           })}
         </ScrollView>
@@ -110,10 +110,7 @@ const styles = StyleSheet.create({
   },
   quickCategoriesContainer: {
     gap: spacing.md,
-    paddingRight: spacing.md, // For safe area scrolling
-  },
-  categoryWrapper: {
-    width: 140, // compact size
+    paddingRight: spacing.md,
   },
   statsCard: {
     flexDirection: 'row',
