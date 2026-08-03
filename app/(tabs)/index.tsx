@@ -40,7 +40,7 @@ export default function HomeScreen() {
       />
       <StatusBar barStyle="light-content" translucent backgroundColor="transparent" />
 
-      {/* Immersive Hero Section */}
+      {/* ═══ Immersive Hero Section ═══ */}
       <ImageBackground
         source={require('../../assets/images/hero-banner.jpg')}
         style={styles.hero}
@@ -55,8 +55,10 @@ export default function HomeScreen() {
           locations={[0, 0.5, 1]}
           style={styles.heroOverlay}
         >
-          {/* Brand name */}
-          <Text style={styles.brandName}>dua.fyi</Text>
+          {/* Brand name — centered at top with website typography */}
+          <Text style={styles.brandName}>
+            dua.fyi<Text style={{ color: theme.primary }}>.</Text>
+          </Text>
 
           <Text style={styles.bismillah}>
             بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
@@ -77,10 +79,12 @@ export default function HomeScreen() {
         </LinearGradient>
       </ImageBackground>
 
-      {/* Content below the hero */}
+      {/* ═══ Content below the hero ═══ */}
       <View style={[styles.content, { backgroundColor: theme.background }]}>
+        {/* Dua of the Day */}
         <DuaOfTheDay />
 
+        {/* Quick Categories */}
         <View style={styles.sectionHeader}>
           <Text style={[styles.sectionTitle, { color: theme.text }]}>
             Quick Categories
@@ -111,6 +115,7 @@ export default function HomeScreen() {
           })}
         </ScrollView>
 
+        {/* Stats Card */}
         <View
           style={[
             styles.statsCard,
@@ -132,7 +137,7 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  /* Hero Section */
+  /* ─── Hero Section ─── */
   hero: {
     width: '100%',
     height: HERO_HEIGHT,
@@ -149,12 +154,15 @@ const styles = StyleSheet.create({
   },
   brandName: {
     position: 'absolute',
-    top: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 16,
-    left: spacing.xl,
-    fontFamily: fonts.bold,
-    fontSize: fontSize.lg,
-    color: 'rgba(255, 255, 255, 0.9)',
-    letterSpacing: 0.5,
+    top: Platform.OS === 'ios' ? 50 : (StatusBar.currentHeight ?? 32) + 12,
+    left: 0,
+    right: 0,
+    textAlign: 'center',
+    fontFamily: fonts.arabic,
+    fontSize: 26,
+    fontWeight: '700',
+    color: '#FFFFFF',
+    letterSpacing: -0.5,
   },
   bismillah: {
     width: '100%',
@@ -191,7 +199,7 @@ const styles = StyleSheet.create({
     maxWidth: 500,
   },
 
-  /* Content Area */
+  /* ─── Content Area ─── */
   content: {
     padding: spacing.md,
     gap: spacing.sm,
