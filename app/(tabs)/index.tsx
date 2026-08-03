@@ -141,6 +141,7 @@ const styles = StyleSheet.create({
   hero: {
     width: '100%',
     height: HERO_HEIGHT,
+    zIndex: 100,
   },
   heroOverlay: {
     width: '100%',
@@ -150,7 +151,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: spacing.xl,
     paddingTop: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 12,
     paddingBottom: spacing.xxl,
-    overflow: 'hidden',
+    zIndex: 100,
   },
   brandName: {
     position: 'absolute',
@@ -197,6 +198,8 @@ const styles = StyleSheet.create({
   searchContainer: {
     width: '100%',
     maxWidth: 500,
+    zIndex: 1000,
+    elevation: 1000,
   },
 
   /* ─── Content Area ─── */
@@ -207,6 +210,7 @@ const styles = StyleSheet.create({
     borderTopRightRadius: borderRadius.xl,
     marginTop: -borderRadius.xl,
     paddingTop: spacing.xl,
+    zIndex: 1,
   },
   sectionHeader: {
     flexDirection: 'row',

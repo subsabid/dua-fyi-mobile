@@ -185,7 +185,8 @@ export const SearchBar: React.FC = () => {
 
 const styles = StyleSheet.create({
   container: {
-    zIndex: 10,
+    zIndex: 9999,
+    elevation: 9999,
     width: '100%',
   },
   inputContainer: {
@@ -216,7 +217,8 @@ const styles = StyleSheet.create({
     borderWidth: 1,
     borderRadius: borderRadius.lg,
     overflow: 'hidden',
-    elevation: 8,
+    zIndex: 9999,
+    elevation: 9999,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.15,
     shadowRadius: 8,
@@ -228,7 +230,7 @@ const styles = StyleSheet.create({
   resultHeader: {
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justify.content: 'space-between',
     marginBottom: 4,
   },
   resultChapter: {
