@@ -41,7 +41,7 @@ export default function HomeScreen() {
       />
       <StatusBar barStyle="light-content" translucent backgroundColor="transparent" />
 
-      {/* ═══ Immersive Hero Section ═══ */}
+      {/* Immersive Hero Section */}
       <ImageBackground
         source={require('../../assets/images/hero-banner.jpg')}
         style={styles.hero}
@@ -78,7 +78,7 @@ export default function HomeScreen() {
         </LinearGradient>
       </ImageBackground>
 
-      {/* ═══ Content below the hero ═══ */}
+      {/* Content below the hero */}
       <View style={[styles.content, { backgroundColor: theme.background }]}>
         {/* Dua of the Day */}
         <DuaOfTheDay />
@@ -136,18 +136,20 @@ const styles = StyleSheet.create({
     flex: 1,
   },
 
-  /* ─── Hero Section ─── */
+  /* Hero Section */
   hero: {
     width: SCREEN_WIDTH,
     height: HERO_HEIGHT,
   },
   heroOverlay: {
+    width: '100%',
     height: HERO_HEIGHT,
     justifyContent: 'center',
     alignItems: 'center',
     paddingHorizontal: spacing.xl,
     paddingTop: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 12,
     paddingBottom: spacing.xxl,
+    overflow: 'hidden',
   },
   brandName: {
     position: 'absolute',
@@ -159,38 +161,41 @@ const styles = StyleSheet.create({
     letterSpacing: 0.5,
   },
   bismillah: {
+    width: '100%',
     fontFamily: fonts.arabic,
-    fontSize: 34,
+    fontSize: 28,
     color: '#FBBF24',
     textAlign: 'center',
-    marginBottom: spacing.lg,
-    lineHeight: 56,
+    marginBottom: spacing.md,
+    lineHeight: 48,
     textShadowColor: 'rgba(0, 0, 0, 0.4)',
     textShadowOffset: { width: 0, height: 3 },
     textShadowRadius: 10,
   },
   tagline: {
+    width: '100%',
     fontFamily: fonts.bold,
-    fontSize: 22,
+    fontSize: 20,
     color: '#FFFFFF',
     textAlign: 'center',
-    lineHeight: 30,
+    lineHeight: 28,
     marginBottom: spacing.sm,
     letterSpacing: -0.3,
   },
   subtitle: {
+    width: '100%',
     fontFamily: fonts.regular,
-    fontSize: fontSize.md,
+    fontSize: fontSize.sm,
     color: 'rgba(255, 255, 255, 0.7)',
     textAlign: 'center',
-    marginBottom: spacing.xxl,
+    marginBottom: spacing.xl,
   },
   searchContainer: {
     width: '100%',
     maxWidth: 500,
   },
 
-  /* ─── Content Area ─── */
+  /* Content Area */
   content: {
     padding: spacing.md,
     gap: spacing.sm,
