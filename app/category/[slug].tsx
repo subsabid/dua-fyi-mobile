@@ -5,14 +5,14 @@ import { FlashList } from '@shopify/flash-list';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
 import { spacing } from '@/src/theme';
 import { ChapterListItem } from '@/src/components/ChapterListItem';
-import { categories, getChaptersByCategory, getDuasByChapter } from '@/src/data';
+import { categories, getCategoryById, getChaptersByCategory, getDuasByChapter } from '@/src/data';
 import { Chapter } from '@/src/data/types';
 
 export default function CategoryDetailScreen() {
   const { slug } = useLocalSearchParams<{ slug: string }>();
   const theme = useThemeColors();
 
-  const category = categories.find(c => c.slug === slug);
+  const category = slug ? getCategoryById(slug) : undefined;
   const chapters = slug ? getChaptersByCategory(slug) : [];
 
   if (!category) {
