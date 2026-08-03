@@ -19,7 +19,6 @@ import { CategoryCard } from '@/src/components/CategoryCard';
 import { categories, getChaptersByCategory } from '@/src/data';
 import { Ionicons } from '@expo/vector-icons';
 
-const { width: SCREEN_WIDTH } = Dimensions.get('window');
 const HERO_HEIGHT = Math.max(420, Dimensions.get('window').height * 0.52);
 
 export default function HomeScreen() {
@@ -56,7 +55,7 @@ export default function HomeScreen() {
           locations={[0, 0.5, 1]}
           style={styles.heroOverlay}
         >
-          {/* Brand name — absolutely positioned top-left */}
+          {/* Brand name */}
           <Text style={styles.brandName}>dua.fyi</Text>
 
           <Text style={styles.bismillah}>
@@ -80,10 +79,8 @@ export default function HomeScreen() {
 
       {/* Content below the hero */}
       <View style={[styles.content, { backgroundColor: theme.background }]}>
-        {/* Dua of the Day */}
         <DuaOfTheDay />
 
-        {/* Quick Categories */}
         <View style={styles.sectionHeader}>
           <Text style={[styles.sectionTitle, { color: theme.text }]}>
             Quick Categories
@@ -114,7 +111,6 @@ export default function HomeScreen() {
           })}
         </ScrollView>
 
-        {/* Stats Card */}
         <View
           style={[
             styles.statsCard,
@@ -138,7 +134,7 @@ const styles = StyleSheet.create({
 
   /* Hero Section */
   hero: {
-    width: SCREEN_WIDTH,
+    width: '100%',
     height: HERO_HEIGHT,
   },
   heroOverlay: {
