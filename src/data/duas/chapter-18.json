@@ -1,0 +1,22 @@
+[
+  {
+    "id": "18-1",
+    "chapterId": 18,
+    "arabic": "سَمِعَ اللهُ لِمَنْ حَمِدَهُ",
+    "transliteration": "Sami'al-lahu liman hamidah.",
+    "translation": "Allah hears whoever praises Him.",
+    "reference": "Al-Bukhari, Muslim",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "18-2",
+    "chapterId": 18,
+    "arabic": "رَبَّنَا وَلَكَ الْحَمْدُ، حَمْداً كَثِيراً طَيِّباً مُبَارَكاً فِيهِ",
+    "transliteration": "Rabbana walakal-hamd, hamdan katheeran tayyiban mubarakan feeh.",
+    "translation": "Our Lord, praise is Yours, abundant, good and blessed praise.",
+    "reference": "Al-Bukhari",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]

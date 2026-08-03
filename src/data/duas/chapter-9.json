@@ -1,0 +1,32 @@
+[
+  {
+    "id": "9-1",
+    "chapterId": 9,
+    "arabic": "أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا اللهُ وَحْدَهُ لَا شَرِيكَ لَهُ، وَأَشْهَدُ أَنَّ مُحَمَّداً عَبْدُهُ وَرَسُولُهُ",
+    "transliteration": "Ashhadu an la ilaha illal-lahu wahdahu la shareeka lah, wa-ashhadu anna Muhammadan 'abduhu warasooluh.",
+    "translation": "I bear witness that none has the right to be worshipped but Allah alone, Who has no partner; and I bear witness that Muhammad is His slave and His Messenger.",
+    "reference": "Muslim 1/209",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "9-2",
+    "chapterId": 9,
+    "arabic": "اللَّهُمَّ اجْعَلْنِي مِنَ التَّوَّابِينَ وَاجْعَلْنِي مِنَ الْمُتَطَهِّرِينَ",
+    "transliteration": "Allahummaj-'alnee minat-tawwabeena waj-'alnee minal-mutatahhireen.",
+    "translation": "O Allah, make me among those who turn to You in repentance, and make me among those who are purified.",
+    "reference": "At-Tirmidhi 1/78",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "9-3",
+    "chapterId": 9,
+    "arabic": "سُبْحَانَكَ اللَّهُمَّ وَبِحَمْدِكَ، أَشْهَدُ أَنْ لَا إِلَهَ إِلَّا أَنْتَ، أَسْتَغْفِرُكَ وَأَتُوبُ إِلَيْكَ",
+    "transliteration": "Subhanakal-lahumma wabihamdika, ashhadu an la ilaha illa Anta, astaghfiruka wa-atoobu ilayk.",
+    "translation": "Glory is to You, O Allah, and praise; I bear witness that there is none worthy of worship but You. I seek Your forgiveness and turn to You in repentance.",
+    "reference": "An-Nasa'i, 'Amalul-Yawm wal-Laylah, p. 173",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]
