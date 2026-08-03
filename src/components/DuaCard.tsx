@@ -88,7 +88,7 @@ export const DuaCard: React.FC<DuaCardProps> = React.memo(({
           >
             <Text style={[styles.actionText, { color: themeColors.primary }]}>Share</Text>
           </Pressable>
-          {dua.audioUrl && (
+          {!!dua.audioUrl && (
             <Pressable
               onPress={() => play(dua.id, dua.audioUrl!)}
               style={({ pressed }) => [styles.actionButton, pressed && styles.pressed]}
