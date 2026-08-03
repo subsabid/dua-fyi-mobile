@@ -1,0 +1,22 @@
+[
+  {
+    "id": "101-1",
+    "chapterId": 101,
+    "arabic": "أَسْتَوْدِعُ اللهَ دِينَكَ، وَأَمَانَتَكَ، وَخَوَاتِيمَ عَمَلِكَ.",
+    "transliteration": "Astawdi'ullaaha deenaka, wa amaanataka, wa khawaateema 'amalik.",
+    "translation": "I entrust to Allah your religion, your trust, and your final deeds.",
+    "reference": "Ahmad 2/7, At-Tirmidhi 5/499",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "101-2",
+    "chapterId": 101,
+    "arabic": "زَوَّدَكَ اللهُ التَّقْوَى، وَغَفَرَ ذَنْبَكَ، وَيَسَّرَ لَكَ الْخَيْرَ حَيْثُ مَا كُنْتَ.",
+    "transliteration": "Zawwadakallaahut-taqwaa, wa ghafara thanbaka, wa yassara lakal-khayra haythu maa kunt.",
+    "translation": "May Allah equip you with piety, forgive your sins, and make goodness easy for you wherever you are.",
+    "reference": "At-Tirmidhi",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]
