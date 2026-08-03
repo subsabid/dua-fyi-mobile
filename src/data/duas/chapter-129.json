@@ -1,0 +1,32 @@
+[
+  {
+    "id": "129-1",
+    "chapterId": 129,
+    "arabic": "وَاللهِ إِنِّي لَأَسْتَغْفِرُ اللهَ وَأَتُوبُ إِلَيْهِ فِي الْيَوْمِ أَكْثَرَ مِنْ سَبْعِينَ مَرَّةً.",
+    "transliteration": "Wallaahi innee la'astaghfirullaaha wa atoobu ilayhi fil-yawmi akthara min sab'eena marrah.",
+    "translation": "By Allah, I seek the forgiveness of Allah, and repent to Him more than seventy times in a day.",
+    "reference": "Al-Bukhari with Al-Fath 11/101",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "129-2",
+    "chapterId": 129,
+    "arabic": "يَا أَيُّهَا النَّاسُ تُوبُوا إِلَى اللهِ فَإِنِّي أَتُوبُ فِي الْيَوْمِ إِلَيْهِ مِائَةَ مَرَّةٍ.",
+    "transliteration": "Yaa ayyuhan-naasu tooboo ilallaahi fa-innee atoobu fil-yawmi ilayhi mi'ata marrah.",
+    "translation": "O people, repent to Allah, for I repent to Him one hundred times a day.",
+    "reference": "Muslim 4/2076",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "129-3",
+    "chapterId": 129,
+    "arabic": "مَنْ قَالَ: أَسْتَغْفِرُ اللهَ الْعَظِيمَ الَّذِي لَا إِلَهَ إِلَّا هُوَ الْحَيَّ الْقَيُّومَ وَأَتُوبُ إِلَيْهِ، غَفَرَ اللهُ لَهُ وَإِنْ كَانَ فَرَّ مِنَ الزَّحْفِ.",
+    "transliteration": "Astaghfirullaahal-'atheemal-lathee laa ilaaha illaa huwal-hayyal-qayyoomu wa atoobu ilayh.",
+    "translation": "Whoever says: 'I seek the forgiveness of Allah the Mighty, Whom there is none worthy of worship except Him, The Living, The Eternal, and I repent to Him,' Allah will forgive him even if he had fled from the battlefield.",
+    "reference": "Abu Dawud 2/85, At-Tirmidhi 5/569, Al-Hakim",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]

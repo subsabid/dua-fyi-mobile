@@ -1,0 +1,22 @@
+[
+  {
+    "id": "122-1",
+    "chapterId": 122,
+    "arabic": "سُبْحَانَ اللهِ!",
+    "transliteration": "Subhaanal-laah!",
+    "translation": "Glory is to Allah!",
+    "reference": "Al-Bukhari 1/210, 390",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "122-2",
+    "chapterId": 122,
+    "arabic": "اللهُ أَكْبَرُ!",
+    "transliteration": "Allaahu akbar!",
+    "translation": "Allah is the Most Great!",
+    "reference": "Al-Bukhari 8/441",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]
