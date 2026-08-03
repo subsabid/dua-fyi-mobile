@@ -89,7 +89,7 @@ const styles = StyleSheet.create({
     padding: spacing.md,
     borderRadius: borderRadius.lg,
     borderWidth: 1,
-    width: 145,
+    width: '100%',
     minHeight: 140,
   },
   iconContainer: {
@@ -127,15 +127,15 @@ const styles = StyleSheet.create({
   },
   compactNameEn: {
     fontFamily: fonts.bold,
-    fontSize: fontSize.xs + 1,
+    fontSize: fontSize.sm,
     textAlign: 'center',
     marginBottom: 2,
   },
   compactNameAr: {
     fontFamily: 'Amiri',
-    fontSize: fontSize.md,
+    fontSize: fontSize.lg,
     textAlign: 'center',
-    marginBottom: 2,
+    marginBottom: 4,
   },
   count: {
     fontFamily: fonts.regular,

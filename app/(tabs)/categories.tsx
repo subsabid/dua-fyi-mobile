@@ -1,8 +1,8 @@
 import React from 'react';
 import { StyleSheet, View, FlatList } from 'react-native';
-import { Stack, router } from 'expo-router';
+import { Stack } from 'expo-router';
 import { useThemeColors } from '@/src/hooks/useThemeColors';
-import { colors, spacing } from '@/src/theme';
+import { spacing } from '@/src/theme';
 import { CategoryCard } from '@/src/components/CategoryCard';
 import { categories, getChaptersByCategory } from '@/src/data';
 
@@ -26,6 +26,7 @@ export default function CategoriesScreen() {
               <CategoryCard 
                 category={item} 
                 chapterCount={chapters.length}
+                variant="compact"
               />
             </View>
           );
