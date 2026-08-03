@@ -8,6 +8,7 @@ import { colors, spacing, borderRadius, fontSize, fonts } from '@/src/theme';
 import { FavoriteButton } from './FavoriteButton';
 import { useAudio } from '@/src/hooks/useAudio';
 import { useFavoritesStore } from '@/src/stores/favoritesStore';
+import { useSettingsStore } from '@/src/stores/settingsStore';
 
 interface DuaCardProps {
   dua: Dua;
@@ -21,6 +22,8 @@ export const DuaCard: React.FC<DuaCardProps> = React.memo(({
   const themeColors = useThemeColors();
   const { play, isPlaying, currentDuaId } = useAudio();
   const { isFavorite, toggleFavorite } = useFavoritesStore();
+  const { arabicFontSize, showTransliteration, showTranslation } = useSettingsStore();
+
   const favorited = isFavorite(dua.id);
   const isThisAudioActive = currentDuaId === dua.id;
   const isThisAudioPlaying = isThisAudioActive && isPlaying;
@@ -40,6 +43,30 @@ export const DuaCard: React.FC<DuaCardProps> = React.memo(({
     }
   };
 
+  const getArabicFontSize = () => {
+    switch (arabicFontSize) {
+      case 'small':
+        return 22;
+      case 'large':
+        return 32;
+      case 'medium':
+      default:
+        return 26;
+    }
+  };
+
+  const getArabicLineHeight = () => {
+    switch (arabicFontSize) {
+      case 'small':
+        return 38;
+      case 'large':
+        return 54;
+      case 'medium':
+      default:
+        return 46;
+    }
+  };
+
   return (
     <View style={[styles.card, { 
       backgroundColor: themeColors.surface,
@@ -56,19 +83,31 @@ export const DuaCard: React.FC<DuaCardProps> = React.memo(({
         )}
       </View>
 
-      <Text style={[styles.arabic, { color: themeColors.text }]} selectable>
+      <Text 
+        style={[
+          styles.arabic, 
+          { 
+            color: themeColors.text,
+            fontSize: getArabicFontSize(),
+            lineHeight: getArabicLineHeight(),
+          }
+        ]} 
+        selectable
+      >
         {dua.arabic}
       </Text>
 
-      {!!dua.transliteration && (
+      {showTransliteration && !!dua.transliteration && (
         <Text style={[styles.transliteration, { color: themeColors.textSecondary }]} selectable>
           {dua.transliteration}
         </Text>
       )}
 
-      <Text style={[styles.translation, { color: themeColors.text }]} selectable>
-        {dua.translation}
-      </Text>
+      {showTranslation && (
+        <Text style={[styles.translation, { color: themeColors.text }]} selectable>
+          {dua.translation}
+        </Text>
+      )}
 
       <Text style={[styles.reference, { color: themeColors.textMuted }]}>
         {dua.reference}
@@ -145,10 +184,8 @@ const styles = StyleSheet.create({
   },
   arabic: {
     fontFamily: 'Amiri',
-    fontSize: fontSize.arabic,
     textAlign: 'right',
     writingDirection: 'rtl',
-    lineHeight: 45,
     marginBottom: spacing.lg,
   },
   transliteration: {
