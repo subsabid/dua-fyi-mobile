@@ -1,0 +1,32 @@
+[
+  {
+    "id": "45-1",
+    "chapterId": 45,
+    "arabic": "الِاسْتِعَاذَةُ بِاللهِ مِنْهُ.",
+    "transliteration": "Al-isti'aathatu billaahi minh.",
+    "translation": "Seeking refuge in Allah from him (i.e. the devil).",
+    "reference": "Abu Dawud 1/206, At-Tirmidhi",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "45-2",
+    "chapterId": 45,
+    "arabic": "الْأَذَانُ.",
+    "transliteration": "Al-Athaan.",
+    "translation": "The Adhan (call to prayer).",
+    "reference": "Al-Bukhari 1/151, Muslim 1/291",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "45-3",
+    "chapterId": 45,
+    "arabic": "الْأَذْكَارُ، وَقِرَاءَةُ الْقُرْآنِ.",
+    "transliteration": "Al-Athkaaru, wa qiraa'atul-Qur'aan.",
+    "translation": "Supplications and recitation of the Quran.",
+    "reference": "Muslim 1/539, etc.",
+    "repeatCount": 1,
+    "audioUrl": ""
+  }
+]

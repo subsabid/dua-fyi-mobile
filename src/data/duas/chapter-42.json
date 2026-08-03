@@ -1,0 +1,22 @@
+[
+  {
+    "id": "42-1",
+    "chapterId": 42,
+    "arabic": "يَسْتَعِيذُ بِاللهِ.",
+    "transliteration": "Yasta'eethu billaah.",
+    "translation": "He should seek refuge in Allah (saying 'A'oothu billaahi minash-shaytaanir-rajeem).",
+    "reference": "Muslim 4/1729",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "42-2",
+    "chapterId": 42,
+    "arabic": "وَيَتْفِلُ عَلَى يَسَارِهِ (ثَلَاثاً).",
+    "transliteration": "Wa yatfilu 'alaa yasaarihi (thalathan).",
+    "translation": "And spit dryly to his left (three times).",
+    "reference": "Muslim 4/1729",
+    "repeatCount": 3,
+    "audioUrl": ""
+  }
+]

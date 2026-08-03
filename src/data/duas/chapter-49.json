@@ -1,0 +1,22 @@
+[
+  {
+    "id": "49-1",
+    "chapterId": 49,
+    "arabic": "لَا بَأْسَ طَهُورٌ إِنْ شَاءَ اللهُ.",
+    "transliteration": "Laa ba'sa tahoorun in shaa'allaah.",
+    "translation": "No need to worry. It is a purification from sins, if Allah wills.",
+    "reference": "Al-Bukhari 10/118",
+    "repeatCount": 1,
+    "audioUrl": ""
+  },
+  {
+    "id": "49-2",
+    "chapterId": 49,
+    "arabic": "أَسْأَلُ اللهَ الْعَظِيمَ رَبَّ الْعَرْشِ الْعَظِيمِ أَنْ يَشْفِيَكَ. (سَبْعَ مَرَّاتٍ)",
+    "transliteration": "As'alullaahal-'atheem rabbal-'arshil-'atheemi an yashfiyak. (seven times)",
+    "translation": "I ask Allah the Mighty, Lord of the Magnificent Throne, to cure you. (Recite seven times)",
+    "reference": "At-Tirmidhi, Abu Dawud 3/187",
+    "repeatCount": 7,
+    "audioUrl": ""
+  }
+]
