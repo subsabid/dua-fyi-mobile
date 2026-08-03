@@ -56,29 +56,24 @@ export default function HomeScreen() {
           locations={[0, 0.5, 1]}
           style={styles.heroOverlay}
         >
-          {/* Top brand bar */}
-          <View style={styles.topBar}>
-            <Text style={styles.brandName}>dua.fyi</Text>
-          </View>
+          {/* Brand name — absolutely positioned top-left */}
+          <Text style={styles.brandName}>dua.fyi</Text>
 
-          {/* Hero content */}
-          <View style={styles.heroContent}>
-            <Text style={styles.bismillah}>
-              بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
-            </Text>
+          <Text style={styles.bismillah}>
+            بِسْمِ اللهِ الرَّحْمَنِ الرَّحِيمِ
+          </Text>
 
-            <Text style={styles.tagline}>
-              Your daily companion for{'\n'}authentic Islamic supplications
-            </Text>
+          <Text style={styles.tagline}>
+            Your daily companion for{'\n'}authentic Islamic supplications
+          </Text>
 
-            <Text style={styles.subtitle}>
-              Based on Hisn al-Muslim (Fortress of the Muslim)
-            </Text>
+          <Text style={styles.subtitle}>
+            Based on Hisn al-Muslim (Fortress of the Muslim)
+          </Text>
 
-            {/* Search bar inside hero */}
-            <View style={styles.searchContainer}>
-              <SearchBar />
-            </View>
+          {/* Search bar inside hero */}
+          <View style={styles.searchContainer}>
+            <SearchBar />
           </View>
         </LinearGradient>
       </ImageBackground>
@@ -147,26 +142,21 @@ const styles = StyleSheet.create({
     height: HERO_HEIGHT,
   },
   heroOverlay: {
-    flex: 1,
-    paddingTop: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 12,
-    justifyContent: 'space-between',
-  },
-  topBar: {
+    height: HERO_HEIGHT,
+    justifyContent: 'center',
+    alignItems: 'center',
     paddingHorizontal: spacing.xl,
-    paddingTop: spacing.sm,
+    paddingTop: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 12,
+    paddingBottom: spacing.xxl,
   },
   brandName: {
+    position: 'absolute',
+    top: Platform.OS === 'ios' ? 54 : (StatusBar.currentHeight ?? 32) + 16,
+    left: spacing.xl,
     fontFamily: fonts.bold,
     fontSize: fontSize.lg,
     color: 'rgba(255, 255, 255, 0.9)',
     letterSpacing: 0.5,
-  },
-  heroContent: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    paddingHorizontal: spacing.xl,
-    paddingBottom: spacing.xxl,
   },
   bismillah: {
     fontFamily: fonts.arabic,
